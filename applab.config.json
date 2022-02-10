@@ -1,0 +1,35 @@
+{
+  "build": [{
+    "buildDir": "dist",
+    "buildFile": "index.js",
+    "buildTypes": false,
+    "bundle": true,
+    "codeSplitting": true,
+    "excludeLibs": [],
+    "define": {},
+    "format": "esm",
+    "inputScripts": ["src/index.ts"],
+    "minify": true,
+    "outDir": "dist",
+    "platform": "browser",
+    "sourceMap": true,
+    "target": "es2017",
+    "treeShaking": true
+  },
+  {
+    "buildDir": "dist",
+    "buildFile": "index.cjs.js",
+    "buildTypes": false,
+    "bundle": true,
+    "codeSplitting": false,
+    "excludeLibs": [],
+    "define": {},
+    "format": "cjs",
+    "inputScripts": ["src/index.ts"],
+    "minify": true,
+    "platform": "browser",
+    "sourceMap": true,
+    "target": "es2017",
+    "treeShaking": true
+  }]
+}
