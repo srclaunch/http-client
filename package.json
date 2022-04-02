@@ -75,7 +75,7 @@
   },
   "dependencies": {
     "@srclaunch/exceptions": "^0.1.40",
-    "@srclaunch/logger": "^0.1.39",
+    "@srclaunch/logger": "^0.1.40",
     "axios": "^0.25.0",
     "axios-retry": "^3.2.4",
     "nanoid": "^3.3.2"
