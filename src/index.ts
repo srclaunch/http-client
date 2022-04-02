@@ -19,8 +19,6 @@ import { nanoid } from 'nanoid';
 export type { HttpResponseCodeDetailsType } from './types/http';
 export { HttpResponseCodeDetails } from './types/http';
 
-//   import { store } from '../index';
-
 export type HttpClientRetryOptions = {
   readonly count?: number;
   readonly delay?: number;
