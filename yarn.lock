@@ -232,7 +232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@srclaunch/exceptions@npm:^0.1.19, @srclaunch/exceptions@npm:^0.1.36":
+"@srclaunch/exceptions@npm:^0.1.19":
   version: 0.1.36
   resolution: "@srclaunch/exceptions@npm:0.1.36"
   dependencies:
@@ -244,14 +244,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@srclaunch/exceptions@npm:^0.1.37":
+  version: 0.1.37
+  resolution: "@srclaunch/exceptions@npm:0.1.37"
+  dependencies:
+    "@srclaunch/logger": ^0.1.35
+    luxon: ^2.3.1
+    nanoid: ^3.3.2
+    serialize-error: ^9.1.1
+  checksum: d40c702d1c857efba83d1e874998d744f6c8770faf0a62f3a19c851e4ef9cd9855e1fcf1f7540c5646ddac336c2701b62e4feb2c15ca0fa0682bdf0167bab517
+  languageName: node
+  linkType: hard
+
 "@srclaunch/http-client@workspace:.":
   version: 0.0.0-use.local
   resolution: "@srclaunch/http-client@workspace:."
   dependencies:
     "@srclaunch/cli": ^0.1.92
     "@srclaunch/dx": ^0.1.18
-    "@srclaunch/exceptions": ^0.1.36
-    "@srclaunch/logger": ^0.1.34
+    "@srclaunch/exceptions": ^0.1.37
+    "@srclaunch/logger": ^0.1.35
     "@srclaunch/types": ^0.1.28
     "@types/js-cookie": ^3.0.1
     "@types/react": ^17.0.43
@@ -291,7 +303,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@srclaunch/logger@npm:^0.1.32, @srclaunch/logger@npm:^0.1.34":
+"@srclaunch/logger@npm:^0.1.32":
   version: 0.1.34
   resolution: "@srclaunch/logger@npm:0.1.34"
   dependencies:
@@ -299,6 +311,17 @@ __metadata:
     luxon: ^2.3.1
     nanoid: ^3.3.2
   checksum: c3163a1a748a34d594444d1d378712965582ad850986bdfad0342d7f6a20446283f2b6bcc2ae7e225ab7db720e0bce4048af65bca8906ebcbae1ba4fd3641fb9
+  languageName: node
+  linkType: hard
+
+"@srclaunch/logger@npm:^0.1.35":
+  version: 0.1.35
+  resolution: "@srclaunch/logger@npm:0.1.35"
+  dependencies:
+    chalk: ^5.0.1
+    luxon: ^2.3.1
+    nanoid: ^3.3.2
+  checksum: d419902e935711fd42fc52a543f7c6da54c4da0ffce894b9d1cb0786eebb274d1096a818a8270e371fb9262f6c5dacebecacce55943f5b37cd72f9eacb494c66
   languageName: node
   linkType: hard
 
