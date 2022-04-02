@@ -352,7 +352,11 @@ export class HttpClient {
       if (exception) {
         return {
           body: response.data,
-          // error: exception.toJSON(),
+          details: {
+            request: {
+              id: requestId,
+            },
+          },
           headers: response.headers,
           status: {
             code: response.status,
@@ -364,7 +368,9 @@ export class HttpClient {
     return {
       body: response.data,
       details: {
-        id: requestId,
+        request: {
+          id: requestId,
+        },
       },
       headers: response.headers,
       status: {
