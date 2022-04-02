@@ -346,22 +346,6 @@ export class HttpClient {
     readonly response: AxiosResponse<HttpRequestException | any>;
     readonly resource: HttpRequestResource;
   }): Promise<HttpResponse<T>> {
-    this.logger.http({
-      request: {
-        details: {
-          id: requestId,
-        },
-        host: this.host,
-        method,
-        resource,
-      },
-      response: {
-        status: {
-          code: response.status,
-        },
-      },
-    });
-
     if (response.data?.code) {
       const exception = getExceptionInstance(response.data?.code);
 
