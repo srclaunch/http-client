@@ -923,14 +923,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@srclaunch/dx@npm:^0.1.43":
-  version: 0.1.43
-  resolution: "@srclaunch/dx@npm:0.1.43"
-  checksum: d8026154cb551b81d06e5d193f4e763d3d03e343522013d22b45fde7254296c2c85fa9113d1cff76ef4a227f8a4c74b35bb89b62ab54674c673ea9029d3bfad4
+"@srclaunch/dx@npm:^0.1.44":
+  version: 0.1.44
+  resolution: "@srclaunch/dx@npm:0.1.44"
+  checksum: 6707d49d5a4e4471fdf0471f3ec41d6a67ff7048a97937bfae51d21d538642a2f34f92343af1d675c33b5dbca6065a069be05d67ee2281b45ead2c5b71a3f30c
   languageName: node
   linkType: hard
 
-"@srclaunch/exceptions@npm:^0.1.48, @srclaunch/exceptions@npm:^0.1.53":
+"@srclaunch/exceptions@npm:^0.1.48":
   version: 0.1.53
   resolution: "@srclaunch/exceptions@npm:0.1.53"
   dependencies:
@@ -942,15 +942,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@srclaunch/exceptions@npm:^0.1.54":
+  version: 0.1.54
+  resolution: "@srclaunch/exceptions@npm:0.1.54"
+  dependencies:
+    "@srclaunch/logger": ^0.1.66
+    luxon: ^2.3.2
+    nanoid: ^3.3.3
+    serialize-error: ^10.0.0
+  checksum: bcbe0b982ad3790b4ead7ac2a40880527172d2faa3c0d60c3807751c7c893ca1a5c0a5297f2f885999423e161ebd6c9ef3da96dc362a2da4c645a6a74a76116d
+  languageName: node
+  linkType: hard
+
 "@srclaunch/http-client@workspace:.":
   version: 0.0.0-use.local
   resolution: "@srclaunch/http-client@workspace:."
   dependencies:
     "@srclaunch/cli": ^0.1.286
-    "@srclaunch/dx": ^0.1.43
-    "@srclaunch/exceptions": ^0.1.53
-    "@srclaunch/logger": ^0.1.65
-    "@srclaunch/types": ^0.1.98
+    "@srclaunch/dx": ^0.1.44
+    "@srclaunch/exceptions": ^0.1.54
+    "@srclaunch/logger": ^0.1.66
+    "@srclaunch/types": ^0.1.99
     "@types/js-cookie": ^3.0.2
     "@types/react": ^18.0.7
     "@typescript-eslint/eslint-plugin": ^5.21.0
@@ -989,7 +1001,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@srclaunch/logger@npm:^0.1.64, @srclaunch/logger@npm:^0.1.65":
+"@srclaunch/logger@npm:^0.1.64":
   version: 0.1.65
   resolution: "@srclaunch/logger@npm:0.1.65"
   dependencies:
@@ -1000,10 +1012,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@srclaunch/types@npm:^0.1.98":
-  version: 0.1.98
-  resolution: "@srclaunch/types@npm:0.1.98"
-  checksum: 0ccb175c7b1095e7353cf85a6a78e9903c3fce79cd0bb29c282bf8525cbb40efe71c3283d0c025e4e2cd2ea7aa528d1c39bcb2720440ab73d089b45c2cd74c36
+"@srclaunch/logger@npm:^0.1.66":
+  version: 0.1.66
+  resolution: "@srclaunch/logger@npm:0.1.66"
+  dependencies:
+    chalk: ^5.0.1
+    luxon: ^2.3.2
+    nanoid: ^3.3.3
+  checksum: b29ee2605a87dceb3931373c59f836de9437632aafe363e68be46fb04be8ec8b30867d047472f1cbe16677d62cf8cfe69d3527b7bfa3b390a81bc1685611bf8c
+  languageName: node
+  linkType: hard
+
+"@srclaunch/types@npm:^0.1.99":
+  version: 0.1.99
+  resolution: "@srclaunch/types@npm:0.1.99"
+  checksum: 7fd3ce586ce40a65819d0e35aee148b542fa9f2c39c76074fd94b19421f511f9fc9f93ba05e3c58452b57de2f864b9c4c12391e30404f5c085fe944aab1eae5c
   languageName: node
   linkType: hard
 
