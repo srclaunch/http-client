@@ -9,8 +9,8 @@ import {
 } from '@srclaunch/types';
 
 export default {
-  name: '@srclaunch/actions',
-  description: 'SrcLaunch Actions',
+  name: '@srclaunch/http-client',
+  description: 'Wrapper around Axios HTTP client',
   type: ProjectType.Library,
   build: {
     bundle: {
