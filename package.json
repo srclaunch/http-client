@@ -12,60 +12,58 @@
     "registry": "https://registry.npmjs.org/"
   },
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "package.json",
     "dist"
   ],
-  "module": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs.js"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
     }
   },
   "scripts": {
-    "build": "yarn clean && yarn build:applab",
-    "build:applab": "applab build",
-    "clean": "rm -fr ./dist",
-    "git:push": "git push --follow-tags origin main",
-    "qr": "yarn build && git add . && git commit -m \"Quick release - patch\" && yarn release",
-    "release": "yarn test && yarn version:patch && yarn git:push",
-    "test": "ava",
-    "version:patch": "standard-version",
+    "build": "yarn srclaunch build",
+    "qr": "yarn build && yarn srclaunch changesets add --message \"Quick release - patch\" && yarn srclaunch release",
+    "release": "yarn test:coverage && yarn srclaunch release",
+    "test": "yarn srclaunch test",
+    "test:watch": "yarn srclaunch test --watch",
+    "test:coverage": "yarn srclaunch test --coverage",
     "yui": "yarn upgrade-interactive"
   },
   "devDependencies": {
-    "@srclaunch/cli": "^0.1.92",
-    "@srclaunch/dx": "^0.1.18",
-    "@srclaunch/types": "^0.1.28",
-    "@types/js-cookie": "^3.0.1",
-    "@types/react": "^17.0.43",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
-    "ava": "^4.1.0",
-    "eslint": "^8.12.0",
+    "@srclaunch/cli": "^0.1.286",
+    "@srclaunch/dx": "^0.1.43",
+    "@srclaunch/types": "^0.1.98",
+    "@types/js-cookie": "^3.0.2",
+    "@types/react": "^18.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "ava": "^4.2.0",
+    "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-stylelint": "^15.0.0",
-    "eslint-import-resolver-typescript": "^2.7.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-functional": "^4.2.0",
+    "eslint-plugin-functional": "^4.2.1",
     "eslint-plugin-github": "^4.3.6",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-only-warn": "^1.0.3",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-regexp": "^1.6.0",
+    "eslint-plugin-regexp": "^1.7.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-sort-requires": "^2.1.0",
-    "eslint-plugin-testing-library": "^5.2.0",
+    "eslint-plugin-testing-library": "^5.3.1",
     "eslint-plugin-unicorn": "^42.0.0",
     "prettier": "^2.6.2",
-    "prettier-eslint": "^13.0.0",
+    "prettier-eslint": "^14.0.1",
     "standard-version": "^9.3.2",
-    "stylelint": "^14.6.1",
+    "stylelint": "^14.7.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^7.0.0",
@@ -74,10 +72,19 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@srclaunch/exceptions": "^0.1.42",
-    "@srclaunch/logger": "^0.1.43",
-    "axios": "^0.25.0",
+    "@srclaunch/exceptions": "^0.1.53",
+    "@srclaunch/logger": "^0.1.65",
+    "axios": "^0.27.0",
     "axios-retry": "^3.2.4",
-    "nanoid": "^3.3.2"
+    "nanoid": "^3.3.3"
+  },
+  "ava": {
+    "extensions": {
+      "js": true,
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
   }
 }
