@@ -35,11 +35,11 @@
     "yui": "yarn upgrade-interactive"
   },
   "devDependencies": {
-    "@srclaunch/cli": "^0.1.286",
-    "@srclaunch/dx": "^0.1.44",
-    "@srclaunch/types": "^0.1.99",
+    "@srclaunch/cli": "^0.1.334",
+    "@srclaunch/dx": "^0.1.45",
+    "@srclaunch/types": "^0.1.115",
     "@types/js-cookie": "^3.0.2",
-    "@types/react": "^18.0.7",
+    "@types/react": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "ava": "^4.2.0",
@@ -61,20 +61,20 @@
     "eslint-plugin-testing-library": "^5.3.1",
     "eslint-plugin-unicorn": "^42.0.0",
     "prettier": "^2.6.2",
-    "prettier-eslint": "^14.0.1",
+    "prettier-eslint": "^14.0.2",
     "standard-version": "^9.3.2",
-    "stylelint": "^14.7.1",
+    "stylelint": "^14.8.0",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^7.0.0",
     "stylelint-order": "^5.0.0",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.4"
   },
   "dependencies": {
-    "@srclaunch/exceptions": "^0.1.54",
-    "@srclaunch/logger": "^0.1.66",
-    "axios": "^0.27.0",
+    "@srclaunch/exceptions": "^0.1.69",
+    "@srclaunch/logger": "^0.1.80",
+    "axios": "^0.27.2",
     "axios-retry": "^3.2.4",
     "nanoid": "^3.3.3"
   },
@@ -86,5 +86,6 @@
     "nodeArguments": [
       "--loader=ts-node/esm"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
