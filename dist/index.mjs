@@ -76214,7 +76214,7 @@ function isIdempotentRequestError(error) {
 }
 /**
  * @param  {Error}  error
- * @return {boolean | Promise}
+ * @return {boolean}
  */
 
 function isNetworkOrIdempotentRequestError(error) {
@@ -76355,8 +76355,9 @@ function _shouldRetry() {
 
     if (typeof shouldRetryOrPromise === 'object') {
       try {
-        yield shouldRetryOrPromise;
-        return true;
+        var shouldRetryPromiseResult = yield shouldRetryOrPromise; // keep return true unless shouldRetryPromiseResult return false for compatibility
+
+        return shouldRetryPromiseResult !== false;
       } catch (_err) {
         return false;
       }
