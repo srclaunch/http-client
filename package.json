@@ -35,9 +35,9 @@
     "yui": "yarn upgrade-interactive"
   },
   "devDependencies": {
-    "@srclaunch/cli": "^0.1.335",
-    "@srclaunch/dx": "^0.1.47",
-    "@srclaunch/types": "^0.1.115",
+    "@srclaunch/cli": "^0.1.346",
+    "@srclaunch/dx": "^0.1.52",
+    "@srclaunch/types": "^0.1.117",
     "@types/js-cookie": "^3.0.2",
     "@types/react": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
@@ -72,8 +72,8 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
-    "@srclaunch/exceptions": "^0.1.69",
-    "@srclaunch/logger": "^0.1.80",
+    "@srclaunch/exceptions": "^0.1.71",
+    "@srclaunch/logger": "^0.1.83",
     "axios": "^0.27.2",
     "axios-retry": "^3.2.5",
     "nanoid": "^3.3.3"
