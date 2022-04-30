@@ -1,4 +1,0 @@
-{"total": {"lines":{"total":1163,"covered":0,"skipped":0,"pct":0},"statements":{"total":1163,"covered":0,"skipped":0,"pct":0},"functions":{"total":2,"covered":0,"skipped":0,"pct":0},"branches":{"total":2,"covered":0,"skipped":0,"pct":0},"branchesTrue":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/Users/steven/Projects/srclaunch/packages/http-client/src/index.ts": {"lines":{"total":381,"covered":0,"skipped":0,"pct":0},"functions":{"total":1,"covered":0,"skipped":0,"pct":0},"statements":{"total":381,"covered":0,"skipped":0,"pct":0},"branches":{"total":1,"covered":0,"skipped":0,"pct":0}}
-,"/Users/steven/Projects/srclaunch/packages/http-client/src/types/http.ts": {"lines":{"total":782,"covered":0,"skipped":0,"pct":0},"functions":{"total":1,"covered":0,"skipped":0,"pct":0},"statements":{"total":782,"covered":0,"skipped":0,"pct":0},"branches":{"total":1,"covered":0,"skipped":0,"pct":0}}
-}

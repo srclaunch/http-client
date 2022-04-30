@@ -22,7 +22,7 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "require": "./dist/index.umd.js"
+      "require": "./dist/index.umd.cjs"
     }
   },
   "scripts": {
@@ -77,15 +77,6 @@
     "axios": "^0.27.2",
     "axios-retry": "^3.2.5",
     "nanoid": "^3.3.3"
-  },
-  "ava": {
-    "extensions": {
-      "js": true,
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--loader=ts-node/esm"
-    ]
   },
   "packageManager": "yarn@3.2.0"
 }
